@@ -98,16 +98,14 @@ while (menuBeenden == False):
     print()
     auswahl = input(print("Ihre auswahl:"))
 
-    if auswahl == 1:
+    if auswahl == "1":
         inventoryListInput()
-        menuBeenden = True
-    elif auswahl == 2:
+    elif auswahl == "2":
         inventarPrint()
-        menuBeenden = True
-    elif auswahl == 3:
+    elif auswahl == "3":
         automaticDuplicateUpdater()
+    elif auswahl == "4":
         menuBeenden = True
-    elif auswahl == 4:
-        print() #exit(0)
+        print("Bye!") #exit(0)
     else:
         print("Kein richtige Auswahl!")
